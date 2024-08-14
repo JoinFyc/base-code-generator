@@ -21,10 +21,7 @@
         <module>biz/shared</module>
         <module>biz/server</module>
         <module>biz/service/impl</module>
-        <module>test</module>
         <module>web/base-code-generator</module>
-        <module>assembly/template</module>
-        <module>deploy</module>
     </modules>
 
     <dependencyManagement>
@@ -32,63 +29,48 @@
             <!-- demo project depends -->
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-common-dal</artifactId>
+                <artifactId>dal</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-common-util</artifactId>
+                <artifactId>util</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-common-service-integration</artifactId>
+                <artifactId>integration</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-core-model</artifactId>
+                <artifactId>model</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-core-service</artifactId>
+                <artifactId>service</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-service-facade-common</artifactId>
+                <artifactId>common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-biz-shared</artifactId>
+                <artifactId>shared</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-server</artifactId>
+                <artifactId>server</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-biz-service-impl</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-assembly-template</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-deploy</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-test</artifactId>
+                <artifactId>impl</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

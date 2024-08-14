@@ -8,17 +8,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-code-generator-common-dal</artifactId>
+    <artifactId>dal</artifactId>
     <packaging>jar</packaging>
 
     <name>base-code-generator-common-dal</name>
 
     <dependencies>
-        <dependency>
-            <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-assembly-template</artifactId>
-        </dependency>
-
         <!-- 核心sping Boot starter,包含自动配置支持，日志和YAML -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>

@@ -8,7 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-code-generator-core-model</artifactId>
+    <artifactId>model</artifactId>
     <packaging>jar</packaging>
 
     <name>base-code-generator-core-model</name>
@@ -16,12 +16,12 @@
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-service-facade-common</artifactId>
+            <artifactId>common</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-common-service-integration</artifactId>
+            <artifactId>integration</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
