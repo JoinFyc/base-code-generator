@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.fei.base</groupId>
+        <artifactId>base-parent</artifactId>
+        <version>1.2.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>base-code-generator</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>base-code-generator/common/dal</module>
+        <module>base-code-generator/common/util</module>
+        <module>base-code-generator/common/service/integration</module>
+        <module>base-code-generator/core/model</module>
+        <module>base-code-generator/core/service</module>
+        <module>base-code-generator/service/facade/common</module>
+        <module>base-code-generator/biz/shared</module>
+        <module>base-code-generator/biz/activity</module>
+        <module>base-code-generator/biz/service/impl</module>
+        <module>base-code-generator/test</module>
+        <module>base-code-generator/web/activity</module>
+        <module>assembly/template</module>
+        <module>deploy</module>
+  </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- demo project depends -->
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-common-dal</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-common-util</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-common-service-integration</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-core-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-core-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-service-facade-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-biz-shared</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-biz-activity</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-biz-service-impl</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-assembly-template</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-deploy</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-test</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fei.base</groupId>
+                <artifactId>base-code-generator-web-activity</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <defaultGoal>install</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>cn.dalgen.plugins</groupId>
+                <artifactId>mybatis-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <configuration>
+                    <templateDirectory>dalgen/templates</templateDirectory>
+                    <outputDirectory>base-code-generator/common/dal/src</outputDirectory>
+                    <config>dalgen/config/config.xml</config>
+                    <copyTemplate>false</copyTemplate>
+                </configuration>
+                <inherited>false</inherited>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    <!--    <distributionManagement>-->
+    <!--        <snapshotRepository>-->
+    <!--            <id>nexus-snapshots</id>-->
+    <!--            &lt;!&ndash;            <url>http://maven.aikucun.com:8082/nexus/content/repositories/snapshots/</url>&ndash;&gt;-->
+    <!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+    <!--        </snapshotRepository>-->
+    <!--        <repository>-->
+    <!--            <id>nexus-releases</id>-->
+    <!--            &lt;!&ndash;            <url>http://maven.aikucun.com:8082/nexus/content/repositories/releases/</url>&ndash;&gt;-->
+    <!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+    <!--        </repository>-->
+    <!--    </distributionManagement>-->
+</project>
