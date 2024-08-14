@@ -4,7 +4,8 @@
 ARCHETYPE_GROUP_ID="com.fei.base"
 ARCHETYPE_ARTIFACT_ID="base-code-generator-archetype"
 ARCHETYPE_VERSION="1.2.0"
-GROUP_ID="com.fei.platform"
+GROUP_ID="com.fei.base"
+PACKAGE="com"
 VERSION="1.0.0-SNAPSHOT"
 BASE_DIR="/Users/fei/Desktop/architecture/project" # 指定基础目录
 
@@ -24,7 +25,7 @@ do
         -DgroupId=${GROUP_ID} \
         -DartifactId=${PROJECT_NAME} \
         -Dversion=${VERSION} \
-        -Dpackage=${GROUP_ID}.${PROJECT_NAME} \
+        -Dpackage=${PACKAGE} \
         -DarchetypeGroupId=${ARCHETYPE_GROUP_ID} \
         -DarchetypeArtifactId=${ARCHETYPE_ARTIFACT_ID} \
         -DarchetypeVersion=${ARCHETYPE_VERSION} \
