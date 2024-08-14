@@ -15,7 +15,7 @@ PROJECT_NAMES=("pay-cashier" "pay-config" "pay-route" "pay-core" "pay-channel-wx
 for PROJECT_NAME in "${PROJECT_NAMES[@]}"
 do
     # 生成项目的目录路径
-    OUTPUT_DIR="${BASE_DIR}/${PROJECT_NAME}"
+    OUTPUT_DIR="${BASE_DIR}"
 
     # 确保目录存在
     mkdir -p "${OUTPUT_DIR}"
