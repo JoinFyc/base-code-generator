@@ -4,22 +4,29 @@
         <groupId>com.fei.base</groupId>
         <artifactId>base-code-generator</artifactId>
         <version>1.2.0</version>
-        <relativePath>../../../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-code-generator-web</artifactId>
+    <artifactId>base-code-generator-core-model</artifactId>
     <packaging>jar</packaging>
-    <name>base-code-generator-web</name>
+
+    <name>base-code-generator-core-model</name>
 
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-biz-service-impl</artifactId>
+            <artifactId>base-code-generator-service-facade-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fei.base</groupId>
+            <artifactId>base-code-generator-common-service-integration</artifactId>
         </dependency>
         <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

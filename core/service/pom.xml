@@ -4,28 +4,21 @@
         <groupId>com.fei.base</groupId>
         <artifactId>base-code-generator</artifactId>
         <version>1.2.0</version>
-        <relativePath>../../../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-code-generator-core-model</artifactId>
+    <artifactId>base-code-generator-core-service</artifactId>
     <packaging>jar</packaging>
-
-    <name>base-code-generator-core-model</name>
 
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-service-facade-common</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-common-service-integration</artifactId>
+            <artifactId>base-code-generator-core-model</artifactId>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

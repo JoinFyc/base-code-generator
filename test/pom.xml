@@ -4,29 +4,38 @@
         <groupId>com.fei.base</groupId>
         <artifactId>base-code-generator</artifactId>
         <version>1.2.0</version>
-        <relativePath>../../../../pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-code-generator-biz-service-impl</artifactId>
+    <artifactId>base-code-generator-test</artifactId>
     <packaging>jar</packaging>
+
+    <name>base-code-generator-test</name>
 
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-server</artifactId>
+            <artifactId>base-code-generator-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fei.base</groupId>
+            <artifactId>base-code-generator-biz-service-impl</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- Getter，Setter，toString -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
