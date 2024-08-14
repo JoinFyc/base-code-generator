@@ -3,39 +3,47 @@
     <parent>
         <groupId>com.fei.base</groupId>
         <artifactId>base-code-generator</artifactId>
-        <version>1.2.0</version>
-        <relativePath>../../pom.xml</relativePath>
+        <version>1.3.0</version>
+        <relativePath>../../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-code-generator-test</artifactId>
+    <artifactId>base-code-generator-common-service-integration</artifactId>
     <packaging>jar</packaging>
 
-    <name>base-code-generator-test</name>
+    <name>base-code-generator-common-service-integration</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-web</artifactId>
+            <artifactId>base-code-generator-common-util</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-biz-service-impl</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
         </dependency>
-        <!-- Getter，Setter，toString -->
+
+<!--        <dependency>-->
+<!--            <groupId>com.fei.base</groupId>-->
+<!--            <artifactId>common-rpc-scan</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
