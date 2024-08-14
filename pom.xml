@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.fei.base</groupId>
         <artifactId>base-parent</artifactId>
@@ -23,7 +24,7 @@
         <module>base-code-generator/web/activity</module>
         <module>assembly/template</module>
         <module>deploy</module>
-  </modules>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
@@ -137,16 +138,14 @@
             </plugin>
         </plugins>
     </build>
-    <!--    <distributionManagement>-->
-    <!--        <snapshotRepository>-->
-    <!--            <id>nexus-snapshots</id>-->
-    <!--            &lt;!&ndash;            <url>http://maven.aikucun.com:8082/nexus/content/repositories/snapshots/</url>&ndash;&gt;-->
-    <!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
-    <!--        </snapshotRepository>-->
-    <!--        <repository>-->
-    <!--            <id>nexus-releases</id>-->
-    <!--            &lt;!&ndash;            <url>http://maven.aikucun.com:8082/nexus/content/repositories/releases/</url>&ndash;&gt;-->
-    <!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
-    <!--        </repository>-->
-    <!--    </distributionManagement>-->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </distributionManagement>
 </project>
