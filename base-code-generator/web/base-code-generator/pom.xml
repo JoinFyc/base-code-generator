@@ -10,8 +10,7 @@
 
     <artifactId>base-code-generator-web</artifactId>
     <packaging>jar</packaging>
-
-    <name>base-code-generator-web-main</name>
+    <name>base-code-generator-web</name>
 
     <dependencies>
         <dependency>
