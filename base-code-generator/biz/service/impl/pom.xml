@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-biz-activity</artifactId>
+            <artifactId>base-code-generator-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -8,19 +8,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-code-generator-web-activity</artifactId>
+    <artifactId>base-code-generator-server</artifactId>
     <packaging>jar</packaging>
-
-    <name>base-code-generator-web-activity</name>
 
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-biz-service-impl</artifactId>
+            <artifactId>base-code-generator-biz-shared</artifactId>
         </dependency>
         <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

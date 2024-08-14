@@ -18,10 +18,10 @@
         <module>base-code-generator/core/service</module>
         <module>base-code-generator/service/facade/common</module>
         <module>base-code-generator/biz/shared</module>
-        <module>base-code-generator/biz/activity</module>
+        <module>base-code-generator/biz/server</module>
         <module>base-code-generator/biz/service/impl</module>
         <module>base-code-generator/test</module>
-        <module>base-code-generator/web/activity</module>
+        <module>base-code-generator/web/base-code-generator</module>
         <module>assembly/template</module>
         <module>deploy</module>
     </modules>
@@ -67,7 +67,7 @@
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-biz-activity</artifactId>
+                <artifactId>base-code-generator-server</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -92,7 +92,7 @@
             </dependency>
             <dependency>
                 <groupId>com.fei.base</groupId>
-                <artifactId>base-code-generator-web-activity</artifactId>
+                <artifactId>base-code-generator-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

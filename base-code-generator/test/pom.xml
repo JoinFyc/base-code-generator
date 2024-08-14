@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>com.fei.base</groupId>
-            <artifactId>base-code-generator-web-activity</artifactId>
+            <artifactId>base-code-generator-web</artifactId>
         </dependency>
 
         <dependency>
