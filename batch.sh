@@ -10,8 +10,18 @@ VERSION="1.0.0-SNAPSHOT"
 BASE_DIR="/Users/fei/Desktop/architecture/project" # 指定基础目录
 
 # 项目名称列表
-PROJECT_NAMES=("pay-two")
-#PROJECT_NAMES=("pay-cashier" "pay-config" "pay-route" "pay-core" "pay-channel-wechat-2" "pay-channel-alipay" "pay-promo" "pay-trade-notify" "pay-trade-insure")
+# 默认的 PROJECT_NAMES 数组
+DEFAULT_PROJECT_NAMES=("pay-cashier" "pay-config" "pay-route" "pay-core" "pay-channel-wechat-2" "pay-channel-alipay" "pay-promo" "pay-trade-notify" "pay-trade-insure")
+
+# 检查是否在终端指定了 PROJECT_NAMES 参数
+if [ -n "$PROJECT_NAMES" ]; then
+    # 如果指定了，则使用指定的值
+    IFS=' ' read -r -a PROJECT_NAMES <<< "$PROJECT_NAMES"
+else
+    # 如果未指定，则使用默认值
+    PROJECT_NAMES=("${DEFAULT_PROJECT_NAMES[@]}")
+    echo "未指定项目名称"
+fi
 
 # 生成项目
 for PROJECT_NAME in "${PROJECT_NAMES[@]}"
