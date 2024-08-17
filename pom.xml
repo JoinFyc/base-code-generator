@@ -106,7 +106,7 @@
                 <version>1.1.1</version>
                 <configuration>
                     <templateDirectory>dalgen/templates</templateDirectory>
-                    <outputDirectory>base-code-generator/common/dal/src</outputDirectory>
+                    <outputDirectory>${project.artifactId}/common/dal/src</outputDirectory>
                     <config>dalgen/config/config.xml</config>
                     <copyTemplate>false</copyTemplate>
                 </configuration>

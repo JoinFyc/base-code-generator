@@ -5,7 +5,7 @@ ARCHETYPE_GROUP_ID="com.fei.base"
 ARCHETYPE_ARTIFACT_ID="base-code-generator-archetype"
 ARCHETYPE_VERSION="1.2.0"
 GROUP_ID="com.fei.base"
-PACKAGE="com"
+PACKAGE="com.fei.base"
 VERSION="1.0.0-SNAPSHOT"
 BASE_DIR="/Users/fei/Desktop/architecture/project" # 指定基础目录
 
