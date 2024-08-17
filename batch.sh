@@ -10,7 +10,8 @@ VERSION="1.0.0-SNAPSHOT"
 BASE_DIR="/Users/fei/Desktop/architecture/project" # 指定基础目录
 
 # 项目名称列表
-PROJECT_NAMES=("pay-cashier" "pay-config" "pay-route" "pay-core" "pay-channel-wx-2" "pay-channel-alipay" "pay-promo" "pay-trade-notify" "pay-trade-insure")
+PROJECT_NAMES=("pay-two")
+#PROJECT_NAMES=("pay-cashier" "pay-config" "pay-route" "pay-core" "pay-channel-wechat-2" "pay-channel-alipay" "pay-promo" "pay-trade-notify" "pay-trade-insure")
 
 # 生成项目
 for PROJECT_NAME in "${PROJECT_NAMES[@]}"
