@@ -1,6 +1,6 @@
-package com.fei.base.biz.activity.manager.impl;
+package com.fei.base.biz.server.manager.impl;
 
-import com.fei.base.biz.activity.manager.DemoManager;
+import com.fei.base.biz.server.manager.DemoManager;
 import com.fei.base.core.model.domain.Demo;
 import com.fei.base.core.service.repository.DemoRepository;
 import com.fei.base.service.facade.common.enums.DemoStatusEnum;

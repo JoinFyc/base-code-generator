@@ -1,4 +1,4 @@
-package com.fei.base.biz.activity.manager;
+package com.fei.base.biz.server.manager;
 
 import com.fei.base.service.facade.common.request.DemoRequest;
 import com.fei.base.service.facade.common.result.DemoResult;

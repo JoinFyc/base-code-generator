@@ -1,7 +1,7 @@
-package com.fei.base.web.activity.controller;
+package com.fei.base.web.controller;
 
 import com.mengxiang.base.common.model.result.Result;
-import com.fei.base.biz.activity.manager.DemoManager;
+import com.fei.base.biz.server.manager.DemoManager;
 import com.fei.base.service.facade.common.request.DemoRequest;
 import com.fei.base.service.facade.common.result.DemoResult;
 import io.swagger.annotations.Api;

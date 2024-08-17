@@ -1,7 +1,7 @@
 package com.fei.base.biz.service.impl;
 
 import com.mengxiang.base.common.model.result.Result;
-import com.fei.base.biz.activity.manager.DemoManager;
+import com.fei.base.biz.server.manager.DemoManager;
 import com.fei.base.service.facade.common.feign.DemoFacade;
 import com.fei.base.service.facade.common.request.DemoRequest;
 import com.fei.base.service.facade.common.result.DemoResult;
