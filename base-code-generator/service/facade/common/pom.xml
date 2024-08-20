@@ -29,10 +29,10 @@
 <!--            <artifactId>jakarta.validation-api</artifactId>-->
 <!--        </dependency>-->
 
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.swagger</groupId>-->
+<!--            <artifactId>swagger-annotations</artifactId>-->
+<!--        </dependency>-->
         <!-- Getter，Setter，toString -->
         <dependency>
             <groupId>org.projectlombok</groupId>

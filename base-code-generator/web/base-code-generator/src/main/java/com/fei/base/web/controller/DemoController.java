@@ -1,13 +1,18 @@
 package com.fei.base.web.controller;
 
-import com.mengxiang.base.common.model.result.Result;
 import com.fei.base.biz.server.manager.DemoManager;
 import com.fei.base.service.facade.common.request.DemoRequest;
 import com.fei.base.service.facade.common.result.DemoResult;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import com.mengxiang.base.common.model.result.Result;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author fei
@@ -15,12 +20,16 @@ import org.springframework.web.bind.annotation.*;
  **/
 @RestController
 @RequestMapping("/base-code-generator")
-@Api(tags = "base-code-generator 服务接口")
+@Tag(name = "base-code-generator 服务接口")
 public class DemoController {
+
     @Autowired
     private DemoManager demoManager;
 
-    @ApiOperation("get base-code-generator 接口")
+    @Resource
+    private RedisTemplate redisTemplate;
+
+    @Operation(summary = "getDemo的请求接口",description = "返回结果DemoResult")
     @PostMapping("/getDemoWeb")
     public Result<DemoResult> getDemo(@RequestParam("demoId") String demoId) {
         DemoResult demoResult = demoManager.selectDemoByDemoId(demoId);
