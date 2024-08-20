@@ -19,6 +19,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.fei.base</groupId>
             <artifactId>base-code-generator-common-util</artifactId>
         </dependency>
